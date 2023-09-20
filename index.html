@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Projeto | Portfólio</title>
+</head>
+<body>
+    <header>
+
+        <div class="logo">Portfólio</div>
+
+        <nav class="menu_desktop">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </nav><!--menu_desktop-->
+
+        <nav onclick="fecharMenu()" id="menu_mobile" class="menu_mobile">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </nav><!--menu_desktop-->
+
+    </header>
+
+    <div onclick="menu_bars()" class="bars">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div><!--bars-->
+
+    <section id="home" class="chamada_header">
+
+        <div class="sobre_header">
+            <span>Olá, eu sou o</span>
+            <h1>Wesley Henrique </h1>
+            <p>Desenvolvedor Front-End</p>
+
+            <div class="redes_sociais">
+                <div class="instagram">
+                    <i class="fa fa-instagram" aria-hidden="true">
+                        <a target="_blank" href="https://www.instagram.com/w_henrique_dos_santos/">Instagram</a>
+                    </i>                    
+                </div>
+    
+                <div class="github">
+                    <i class="fa fa-github-square" aria-hidden="true">
+                        <a target="_blank" href="https://github.com/Wesley-Henrique-Dos-Santos">Github</a>
+                    </i>                 
+                </div>
+    
+                <div class="linkedin">
+                    <i class="fa fa-linkedin-square" aria-hidden="true">
+                        <a target="_blank" href="https://www.linkedin.com/in/wesley-henrique-812355244/">linkedin</a>
+                    </i>      
+                </div>
+            </div><!--redes_sociais-->
+            
+        </div><!--chamada_header-->
+
+        <div class="img_portfolio"></div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre mim:</h2>
+        <p>Meu nome é, <strong>Wesley Henrique Dos Santos</strong> desenvolvedor Front-end, comecei a estudar programação em 2020 programar é uma paixão 
+            porém, exige muito estudo dedicação e concentração mais vale a pena cada desafio,
+            Disposto a dar o meu melhor como desenvolvedor, e aprender mais com programadores mais experientes.</p>
+    </section><!--sobre-->
+
+    <section id="habilidades" class="habilidades">
+        <h2>Habilidades</h2>
+            <div class="dFlex">
+                <div class="html">
+                    <h3>HTML</h3>
+                    <img src="images/html.png" alt="html">
+                </div>
+                <div class="css">
+                    <h3>CSS</h3>
+                    <img src="images/css.png" alt="css">
+                </div>
+                <div class="js">
+                    <h3>javascript</h3>
+                    <img src="images/js.png" alt="javascript">
+                </div>
+
+                <div class="css-responsivo">
+                    <h3>Design responsivo</h3>
+                    <img src="images/Web design responsivo.png" alt="Web design responsivo">
+                </div>
+
+                <div class="css-bootstrap">
+                    <h3>Bootstrap</h3>
+                    <img src="images/bootstrap.png" alt="Bootstrap">
+                </div>
+
+                <div class="sassLess">
+                    <h3>Sass</h3>
+                    <img src="images/sass less.png" alt="Processadores sass e less">
+                </div>
+            </div><!--dFlex-->
+    </section><!--habilidades-->
+
+    <main id="projetos" class="projetos">
+        <h2>Meus - projetos</h2>
+
+        <section class="single_projeto">
+            <div class="_projeto">
+                <div class="imgpro"></div>
+                <div class="textpro">
+                    <h2>What is Lorem Ipsum?</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+                <button onclick="verMais()" class="verMais">
+                    <span class="material-symbols-outlined">
+                        chevron_left
+                    </span>
+                </button>
+            </div><!--_projeto-->
+        </section><!--single_projetos-->
+    </main><!--projetos-->
+
+    <footer id="contato" class="contato">
+        <section class="main-contato">
+            <h2>Entre em contato</h2>
+            <div class="endereco">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Rua Iracema Alves Cevallos, 27
+                    Jardim Romero - Bariri-SP 
+                </span>
+            </div><!--endereco-->
+
+            <div class="whats">
+                <i class="fa fa-whatsapp" aria-hidden="true">
+                    <span>(14)98152-9691</span>
+                </i>    
+            </div><!--whats-->
+            
+            <div class="email">
+                <i class="fa fa-envelope-o" aria-hidden="true">
+                    <span>whds_rick@hotmail.com</span>
+                </i>
+            </div>
+
+            <div class="instagram">
+                <i class="fa fa-instagram" aria-hidden="true">
+                    <a href="https://www.instagram.com/w_henrique_dos_santos/">Instagram</a>
+                </i>
+            </div>
+
+            <div class="github">
+                <i class="fa fa-github-square" aria-hidden="true">
+                    <a href="https://github.com/Wesley-Henrique-Dos-Santos">Github</a>
+                </i>
+            </div>
+
+            <div class="linkedin">
+                <i class="fa fa-linkedin-square" aria-hidden="true">
+                    <a href="https://www.linkedin.com/in/wesley-henrique-812355244/">linkedin</a>
+                </i>
+            </div>
+        </section><!--main-contato-->
+    </footer><!--contato-->
+    
+<script src="js/script.js"></script>    
+</body>
+</html>
